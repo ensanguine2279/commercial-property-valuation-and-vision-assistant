@@ -26,6 +26,13 @@ The application architecture involves three main steps:
 
 ![Streamlit - Deployment Settings](./assets/images/streamlit-deploy.png)
 
+5. Click in `Advanced Settings` to enter the Google API key. Click `Save` button.
+
+![Streamlit - Advanced Settings](./assets/images/streamlit-advanced-settings.png)
+
+6. Click the `Deploy` button.
+
+
 ## Running locally
 
 Ensure you have your Google API key configured (`export GOOGLE_API_KEY="your-api-key"`).
