@@ -110,6 +110,7 @@ if st.button("Evaluate Property Valuation"):
       comp_df = pd.read_sql(query, conn)
 
       avg_psm = (
+        # Use the average price per sqm from comparable properties, or default to 2000.0 if no comps are found
           comp_df["avg_psm"].iloc[0] if not comp_df.empty else 2000.0
       )
       estimated_valuation = avg_psm * gfa_sqm
