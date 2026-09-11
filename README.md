@@ -26,12 +26,11 @@ The application architecture involves three main steps:
 
 ![Streamlit - Deployment Settings](./assets/images/streamlit-deploy.png)
 
-5. Click in `Advanced Settings` to enter the Google API key. Click `Save` button.
+5. Click on `Advanced Settings` to enter the Google API key. Click `Save` button.
 
 ![Streamlit - Advanced Settings](./assets/images/streamlit-advanced-settings.png)
 
 6. Click the `Deploy` button.
-
 
 ## Running locally
 
@@ -42,3 +41,18 @@ Run the prototype locally using `uv`:
 ```bash
 uv run streamlit run app.py
 ```
+
+## Why use Streamlit
+
+Streamlit is the leading framework for prototyping data and AI applications because it eliminates the traditional overhead of web development.
+
+**Pure Python Stack**: Build the entire user interface—sliders, file uploaders, metrics, and data tables—using standard Python functions without needing to write HTML, CSS, or JavaScript.
+
+**Built-in Multimodal Components**: Handling file uploads (st.file_uploader) and displaying images (st.image) requires only a couple of lines, making it ideal for the vision-based property app built.
+
+**Instant State and Caching**: Features like @st.cache_resource make it effortless to load a 10,000-row CSV or initialize a SQLite database once, preventing the app from lagging every time a user interacts with a filter.
+
+**Rapid Iteration Cycle**: When you update your script, Streamlit automatically refreshes the browser window live, allowing you to test changes to your AI prompts and UI instantly.
+
+**Frictionless Free Hosting**: Streamlit Community Cloud ties directly into GitHub, meaning you can publish your local script to a public URL in less than two minutes without managing servers or configuring cloud infrastructure manually.
+
