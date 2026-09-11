@@ -1,0 +1,29 @@
+[project]
+name = "kelly"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "howie", email = "ensanguine2279@gmail.com" }
+]
+requires-python = ">=3.14"
+
+dependencies = [
+    "streamlit>=1.30.0",
+    "pillow>=10.0.0",
+    "langchain>=0.3.0",
+    "langchain-community>=0.3.0",
+    "langchain-google-genai>=4.4.0",
+    "langchain-openai>=0.2.0",
+    "openai>=3.10.0",
+    "openai-agents>=0.22.1",
+    "pandas>=2.0.0",
+    "pygments>=2.21.0",
+]
+
+[project.scripts]
+kelly = "kelly:main"
+
+[build-system]
+requires = ["uv_build>=0.12.5,<0.13.0"]
+build-backend = "uv_build"
