@@ -12,15 +12,19 @@ The application architecture involves three main steps:
 
 ## Deploy on Streamlit Community Cloud
 
-Create an account with [Streamlit Community Cloud](https://streamlit.io/cloud).
+1. Create an account with [Streamlit Community Cloud](https://streamlit.io/cloud).
 
-Login and click on the `Create app` button.
+2. Login and click on the `Create app` button.
 
-![Streamlit create app button](./assets/images/streamlit-create-app.png)
+![Streamlit - Create app](./assets/images/streamlit-create-app.png)
 
-Select deploy from [GitHub](https://github.com/ensanguine2279/commercial-property-valuation-and-vision-assistant/)
+3. Select deploy from [GitHub](https://github.com/ensanguine2279/commercial-property-valuation-and-vision-assistant/).
 
-![Streanlit deploy from GitHub](./assets/images/streamlit-github.png)
+![Streamlit - Deploy from GitHub](./assets/images/streamlit-github.png)
+
+4. Link the [GitHub repo](https://github.com/ensanguine2279/commercial-property-valuation-and-vision-assistant/) to the app.
+
+![Streamlit - Deployment Settings](./assets/images/streamlit-deploy.png)
 
 ## Running locally
 
