@@ -32,6 +32,10 @@ The application architecture involves three main steps:
 
 6. Click the `Deploy` button.
 
+7. After provisioning the environment and dependencies, the app will be available at a url that comprises of the app name and a random generated string (e.g. [https://commercial-property-valuation-and-vision-assistant-fbqvslkmsmw.streamlit.app](https://commercial-property-valuation-and-vision-assistant-fbqvslkmsmw.streamlit.app))
+
+> As with most free tier hosted apps, Streamlit Community Cloud will hibernates apps to conserve resources after a period of inactivity. Any new visits will trigger the app to wake up, as it reclones the repo and reinstalls the dependencies. So expect a slight delay when visiting the app when it is waking up.
+
 ## Running locally
 
 Ensure you have your Google API key configured (`export GOOGLE_API_KEY="your-api-key"`).
@@ -55,4 +59,3 @@ Streamlit is the leading framework for prototyping data and AI applications beca
 **Rapid Iteration Cycle**: When you update your script, Streamlit automatically refreshes the browser window live, allowing you to test changes to your AI prompts and UI instantly.
 
 **Frictionless Free Hosting**: Streamlit Community Cloud ties directly into GitHub, meaning you can publish your local script to a public URL in less than two minutes without managing servers or configuring cloud infrastructure manually.
-
