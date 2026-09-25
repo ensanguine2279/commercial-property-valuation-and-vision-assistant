@@ -8,3 +8,4 @@ openai>=2.34.0
 openai-agents>=0.22.1
 pandas>=2.0.0
 pygments>=2.21.0
+reportlab>=4.4,<5
