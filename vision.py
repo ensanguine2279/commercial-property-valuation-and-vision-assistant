@@ -7,7 +7,7 @@ from langchain_core.messages import HumanMessage
 from langchain_google_genai import ChatGoogleGenerativeAI
 from PIL import Image
 
-from config import GEN_CONFIG, VISION_MODEL
+from config import VISION_MODEL
 
 VISION_PROMPT_TEXT = (
     "Analyze this commercial property photo. Provide a short"
@@ -32,9 +32,7 @@ def analyze_property_image(image: Image.Image):
   Returns the raw `response.content` (str or list-of-parts) exactly as
   LangChain returns it; use parsing.extract_json/extract_text on the result.
   """
-  vision_llm = ChatGoogleGenerativeAI(
-      model=VISION_MODEL, temperature=0, generation_config=GEN_CONFIG
-  )
+  vision_llm = ChatGoogleGenerativeAI(model=VISION_MODEL, temperature=0)
 
   buffered = BytesIO()
   image.save(buffered, format="JPEG")

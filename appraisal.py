@@ -2,7 +2,7 @@
 
 from langchain_google_genai import ChatGoogleGenerativeAI
 
-from config import GEN_CONFIG, SYNTHESIS_MODEL
+from config import SYNTHESIS_MODEL
 
 SYNTHESIS_PROMPT_TEMPLATE = """
 You are a senior commercial real estate appraiser preparing a formal valuation report.
@@ -41,9 +41,7 @@ def generate_appraisal_report(
   Returns the raw `response.content` (str or list-of-parts) exactly as
   LangChain returns it; use parsing.extract_json/extract_text on the result.
   """
-  synthesizer = ChatGoogleGenerativeAI(
-      model=SYNTHESIS_MODEL, temperature=0.2, generation_config=GEN_CONFIG
-  )
+  synthesizer = ChatGoogleGenerativeAI(model=SYNTHESIS_MODEL, temperature=0.2)
   prompt = SYNTHESIS_PROMPT_TEMPLATE.format(
       property_type=property_type,
       region=region,
