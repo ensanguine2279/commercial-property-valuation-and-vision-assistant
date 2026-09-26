@@ -57,8 +57,9 @@ def _build_styles():
           "BigValue",
           parent=base_styles["Normal"],
           fontSize=22,
+          leading=28,  # must exceed fontSize or tall glyphs overlap the next paragraph
           textColor=colors.HexColor("#0f172a"),
-          spaceAfter=4,
+          spaceAfter=8,
       ),
   }
 
